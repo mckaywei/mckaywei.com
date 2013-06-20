@@ -1,0 +1,4 @@
+mckaywei.com
+============
+
+my blog
