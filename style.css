@@ -94,7 +94,7 @@ body {
 
 .content {
   margin: 0 auto;
-  max-width: 640px;
+  max-width: 660px;
 }
 body, button, input, select, textarea {
   font: 1em/1.5 'Proxima Nova Regular', 'Helvetica Neue', "Hiragino Sans GB", Helvetica, Arial, sans-serif;
@@ -551,7 +551,7 @@ ul.tags {
   display: inline-block;
 }
 
-#main-nav a#blog:hover, a#about:hover, a#archive:hover {
+#main-nav a.blog:hover, a.about:hover, a.email:hover {
   border-top:solid 5px #4271B0;
   color: #4271B0;
   border-bottom: none;
@@ -569,23 +569,6 @@ ul.tags {
     height: 24px;
 }
 .twitter:hover {
-  opacity: 100;
-    border-bottom: none;
-}
-
-.email {
-  display: block;
-  text-indent: -99999px;
-    opacity: 0.3;
-    -webkit-transition: all 0.3s ease;
-    z-index:99999;
-    position:fixed;
-    top:80px;
-    right:35px;
-    width: 30px;
-    height: 30px;
-}
-.email:hover {
   opacity: 100;
     border-bottom: none;
 }
@@ -700,45 +683,15 @@ footer {
   color: #000;
 }
 
-#pagination {
-  margin-bottom: 5px;
+.pagination {
+  margin-bottom: 4em;
   text-align: center;
   list-style: none;
 }
 
-#pagination li
-{
-  font-size: 0.75em;
-  line-height: 1.5em;
-  margin: 0 0 12px 0;
-  display: inline-block;
-  -webkit-transition-property: border-bottom;
-  -webkit-transition-duration: 0.35s;
-  padding-left: 4px;
-  padding-right: 4px;
-  width: 4px;
-}
-
-#pagination a {
-  color: #4a4235;
+.pagination a {
+  color: #4271b0;
   border-bottom: none;
-}
-
-#pagination li:hover{
-  border-top: solid 4px #4271B0;
-  color: #4271B0;
-}
-
-.page #pagination {
-  display: none;
-}
-
-.archive #pagination {
-  display: none;
-}
-
-.post #pagination {
-  display: none;
 }
 
 a[href*="/admin"]{
