@@ -15,7 +15,6 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta http-equiv="cleartype" content="no">
-  <link rel="alternate" type="application/rss+xml" title="McKay Wei / Blog" href="http:mckaywei.com/feed/">
   <link rel="shortcut icon" href="http://cdn.mckaywei.com/img/favicon.ico">
   <link rel="stylesheet" href="http://cdn.mckaywei.com/style.css" type="text/css">
   <meta property="og:title" content="{{#posts}}{{#is_post}}{{title}} / {{/is_post}}{{/posts}}{{author}}">
@@ -43,9 +42,9 @@
         </hgroup>
       <nav id="main-nav">
         <ul>
-          <li><a href="http://mckaywei.com" id="blog" class="blog">Blog</a></li>
-          <li><a href="http://mckaywei.com/about" id="about" class="about">About</a></li>
-          <li><a href="http://mckaywei.com/archive" id="archive" class="archive">Archive</a></li>
+          <li><a href="http://mckaywei.com/about" class="about">About</a></li>
+          <li><a href="http://mckaywei.com" class="blog">Blog</a></li>
+          <li><a href="mailto:mw@mckaywei.com" class="email">Email</a></li>
 </ul>
       </nav>
      </div>
@@ -105,38 +104,19 @@
     </article>
     {{/is_archive}}
     {{/posts}}
-    <!-- 404 -->
-    {{^posts}}
-    <article>
-     <div class="content">
-      <div class="articlepost">
-      <header>
-        <h2><a href="{{base_url}}">Found nothing to read, sorry.</a></h2>
-      </header>
-      </div>
-     </div>
-    </article>
-    {{/posts}}
+
     {{#is_archive}}
     <!-- used to give the archive bottom some nice spacing... -->
     <div class="archive-foot"></div>
       {{/is_archive}}
-      <div id ="pagination">
-      <ol>
-      <li>
-        <a href="/">1</a>
-      </li>
-      <li>
-        <a href="/2">2</a>
-      </li>
-      </ol>
+      <div class="pagination">
+        <a href="http://mckaywei.com/archive">Archive →</a>
       </div>
     </section>
     <footer>
-          <p>© 2013 <a href="http://mckaywei.com">McKay Wei</a>. All Rights Reserved  +  hosting provided by <a href="http://www.linode.com" target="_blank">Linode</a></p>
+          <p>© 2013 McKay Wei. All Rights Reserved</p>
     </footer>
     <a class="twitter" href="https://twitter.com/mckaywei" target="_blank"><img src="http://cdn.mckaywei.com/img/twitter.png" target="_blank" width="35px" height="24px"></a>
-    <a class="email" href="mailto:mw@mckaywei.com"><img src="http://cdn.mckaywei.com/img/email.png" width="30px" height="30px"></a>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
     <script src="http://cdn.mckaywei.com/js/respond.min.js"></script>
     <script type="text/javascript">
