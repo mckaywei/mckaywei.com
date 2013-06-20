@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="ROBOTS" content="INDEX,FOLLOW">
+  <title>McKay Wei / Blog{{#is_post}}{{#posts}} / {{title}}{{/posts}}{{/is_post}}{{#is_page}}{{#posts}} / {{title}}{{/posts}}{{/is_page}}</title>
+  <meta name="description" content="A weblog to store some gibberish from McKay Wei.">
+  <meta name="author" content="McKay Wei">
+  <meta name="copyright" content="© Copyright 2009 to Present">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta http-equiv="cleartype" content="no">
+  <link rel="alternate" type="application/rss+xml" title="McKay Wei / Blog" href="http:mckaywei.com/feed/">
+  <link rel="shortcut icon" href="http://cdn.mckaywei.com/img/favicon.ico">
+  <link rel="stylesheet" href="http://cdn.mckaywei.com/style.css" type="text/css">
+  <meta property="og:title" content="{{#posts}}{{#is_post}}{{title}} / {{/is_post}}{{/posts}}{{author}}">
+  <meta property="og:url" content="{{#posts}}{{#is_post}}{{permalink}}{{/is_post}}{{/posts}}">
+  <meta property="og:description" content="{{author}} / {{blog_title}}">
+  <meta property="og:site_name" content="McKayWei.com">
+  <meta property="og:type" content="article">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@mckaywei">
+  <meta name="twitter:creator" content="@mckaywei">
+  <meta name="twitter:url" content="{{#posts}}{{#is_post}}{{permalink}}{{/is_post}}{{/posts}}">
+  <meta name="twitter:title" content="{{#posts}}{{#is_post}}{{title}} / {{/is_post}}{{/posts}}">
+  <meta name="twitter:description" content="{{blog_title}}">
+</head>
+  <body>
+    <header id="top">
+     <div class="group content">
+        <hgroup id="main-header">
+          <h1>
+            <a href="http://mckaywei.com" id="mckay" class="mckay">mckay</a>
+            <a href="http://mckaywei.com" id="wei" class="wei">wei</a>
+            <a href="http://mckaywei.com" id="mckay_abbr" class="mckay">m</a>
+            <a href="http://mckaywei.com" id="wei_abbr" class="wei">w</a>
+          </h1>
+        </hgroup>
+      <nav id="main-nav">
+        <ul>
+          <li><a href="http://mckaywei.com" id="blog" class="blog">Blog</a></li>
+          <li><a href="http://mckaywei.com/about" id="about" class="about">About</a></li>
+          <li><a href="http://mckaywei.com/archive" id="archive" class="archive">Archive</a></li>
+</ul>
+      </nav>
+     </div>
+    </header>
+    <section id="articles" class="{{page}}">
+      {{#posts}}
+    {{^is_archive}}
+    <article>
+     <div class="content">
+      <div class="articlepost">
+      <header>
+        <h2><a href="{{permalink}}">{{title}}</a> {{#post_permalink}}<a href="{{post_permalink}}">#</a>{{/post_permalink}}</h2>
+            </header>
+      {{#excerpt}}<span class="introduction">{{excerpt}}</span>{{/excerpt}}
+      {{content}}
+      {{#if_tags}}
+        <ul class="tags">
+          {{#tags}}<li><a href="{{base_url}}/tag/{{name}}">{{name}}</a></li>{{/tags}}
+        </ul>
+      {{/if_tags}}
+      {{#is_post}}
+        <section class="post-foot">
+          <a class="link-back" href="/">« Back</a>
+          </section>
+          <!-- Disqus code -->
+      <div id="disqus_thread"></div>
+        <script type="text/javascript">
+          var disqus_loaded = false;
+            function load_disqus()
+            {
+              var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+              dsq.src = "http://mckayblog.disqus.com/embed.js";
+              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+              var ldr = document.getElementById('disqus_loader');
+              disqus_loaded = true;
+            }
+            window.onscroll = function(e) {
+            if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+            if (disqus_loaded==false){ load_disqus() };
+            }
+          };
+    </script>
+<!-- end of Disqus code -->
+      {{/is_post}}
+      </div>
+     </div>
+    </article>
+    {{/is_archive}}
+
+    <!-- archive -->
+    {{#is_archive}}
+    <article class="archive{{#archive_divider}} archive-devider{{/archive_divider}} {{archive_divider_index}}">
+      <div class="content">
+         <span class="archive-date">{{prettydate}}</span><span class="archive-link"><a href="{{permalink}}">{{title}}</a>{{#post_permalink}} <a href="{{post_permalink}}">#</a>{{/post_permalink}}</strong>
+        {{#excerpt}}<span class="introduction">{{excerpt}}</span>{{/excerpt}}
+      </div>
+    </article>
+    {{/is_archive}}
+    {{/posts}}
+    <!-- 404 -->
+    {{^posts}}
+    <article>
+     <div class="content">
+      <div class="articlepost">
+      <header>
+        <h2><a href="{{base_url}}">Found nothing to read, sorry.</a></h2>
+      </header>
+      </div>
+     </div>
+    </article>
+    {{/posts}}
+    {{#is_archive}}
+    <!-- used to give the archive bottom some nice spacing... -->
+    <div class="archive-foot"></div>
+      {{/is_archive}}
+      <div id ="pagination">
+      <ol>
+      <li>
+        <a href="/">1</a>
+      </li>
+      <li>
+        <a href="/2">2</a>
+      </li>
+      </ol>
+      </div>
+    </section>
+    <footer>
+          <p>© 2013 <a href="http://mckaywei.com">McKay Wei</a>. All Rights Reserved  +  hosting provided by <a href="http://www.linode.com" target="_blank">Linode</a></p>
+    </footer>
+    <a class="twitter" href="https://twitter.com/mckaywei" target="_blank"><img src="http://cdn.mckaywei.com/img/twitter.png" target="_blank" width="35px" height="24px"></a>
+    <a class="email" href="mailto:mw@mckaywei.com"><img src="http://cdn.mckaywei.com/img/email.png" width="30px" height="30px"></a>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="http://cdn.mckaywei.com/js/respond.min.js"></script>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-11507393-3']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+  </script>
+  </body>
+</html>
