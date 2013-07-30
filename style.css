@@ -831,9 +831,12 @@ time {
 
 	}
 
-
 	.push-menu-open {
 		top: 6px;
+	}
+
+	.notes {
+		margin-top: 1em;
 	}
 
 	svg {
