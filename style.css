@@ -92,6 +92,8 @@ header {
 	font-size: 45%;
 	float: left;
 	margin-top: -1em;
+	z-index: 4;
+	position: absolute;
 }
 
 .m {
@@ -153,7 +155,7 @@ button, a, button:hover, a:hover, pre, pre:hover, h1, ul.tags li a {
 	top: 35px;
 	right: 35px;
 	opacity: 0.3;
-	z-index:99999;
+	z-index:3;
     -webkit-transition: all 0.3s ease;
 }
 
@@ -505,7 +507,7 @@ time {
 	position: relative;
 	color: #747780;
 	font-size: 80%;
-	left: 10%;
+	left: 20%;
 }
 
 .th:after {
@@ -606,7 +608,7 @@ time {
 
 	.logo {
 		font-size: 0.7em;
-		margin-top: -10px;
+		margin-top: 0.1em;
 	}
 
 	#m {
@@ -695,56 +697,70 @@ time {
 		display: none;
 	}
 
-	#navButt1 {
+	.nav-toggle {
 		position: absolute;
-		top: 1.5em;
-		right: 3em;
-		width: 3em;
-		height: 1em;
-		z-index: 700;
-		background-color: #2c251d;
-		border: 0;
-		opacity: 1;
-		-moz-opacity: 1;
+		right: 5%;
+		top: 1em;
+		z-index: 2;
 	}
 
-	#navButt2 {
-		position: absolute;
-		top: 1.5em;
-		right: 0;
-		width: 3em;
-		height: 1em;
-		z-index: 700;
-		background-color: #4271B0;
-		border: 0;
-		opacity: 1;
-		-moz-opacity: 1;
-
-	}
-
-	#navButt1:hover {
+	.nav-bar {
+		width: 20px;
+		height: 4px;
 		background-color: silver;
+		margin-bottom: 4px;
+		-webkit-transition:all 025s ease;
+		transition: all 0.25s ease;
+		-moz-transition: all 0.25s ease;
 	}
 
-	.bp {
-		overflow-x: hidden;
-		position: relative;
-		-webkit-transition: all 0.3s ease;
-		-moz-transition: all 0.3s ease;
-		transition: all 0.3s ease;
+	.nav-toggle:hover .nav-bar {
+		background-color: #4271B0;
+	}
+
+	.push-menu {
+		background-color: #fafafa;
+		position: absolute;
+		width: 100%;
+		height: 200px;
+		left: 0;
+		top: -200px;
+		overflow: hidden;
+		z-index: 0;
+		text-align: center;
+		opacity: 0.95;
+		-webkit-transition: none 0.3s linear;
+		transition: none 0.3s linear;
+		-moz-transition: none 0.3s linear;
+		-o-transition: none 0.3s linear;
 	}
 
 	.push-menu-open {
-		right: 0px;
+		top: 6px;
 	}
 
 	.push-menu a:hover {
-		background-color: #47a3da;
+		border: none;
 	}
 
-	.push-menu a:active {
-		background: #afdefa;
-		color: #47a3da;
+	.push-menu ul {
+		list-style-type: none;
+		padding: 0;
+		margin: 100px auto;
+	}
+
+	.push-menu li {
+		float: left;
+		width: 25%;
+		margin: 0 auto;
+		z-index: 4;
+	}
+
+	svg {
+		display: block;
+		width: 50px;
+		height: 50px;
+		margin: 0 auto;
 	}
 
 	.video {
@@ -800,37 +816,11 @@ time {
 
 @media only screen and (min-width: 20.01em) and (max-width: 48.99em) {
 	.push-menu a {
-		display: block;
-		color: #fff;
-		font-size: 2em;
-		font-weight: 300;
-		border-bottom: 1px solid #fff;
-		padding: 28.1%;
-	}
 
-	.bp-toleft {
-		left: -300px;
-		overflow: hidden;
-	}
-
-	.push-menu {
-		background-color: #4271B0;
-		position: fixed;
-		width: 300px;
-		right: -300px;
-		top: 0;
-		bottom: 0;
-		z-index: 1000;
-		text-align: center;
-		overflow: scroll;
-		-webkit-transition: none 0.3s linear;
-		transition: none 0.3s linear;
-		-moz-transition: none 0.3s linear;
-		-o-transition: none 0.3s linear;
 	}
 
 	.push-menu-open {
-		right: 0px;
+		top: 6px;
 	}
 }
 
@@ -838,35 +828,19 @@ time {
 	.push-menu a {
 		display: block;
 		color: #fff;
-		font-size: 2em;
-		font-weight: 300;
-		border-bottom: 1px solid #fff;
-		padding: 19.4%;
+
 	}
 
-	.push-menu {
-		background-color: #4271B0;
-		position: fixed;
-		width: 200px;
-		right: -200px;
-		top: 0;
-		bottom: 0;
-		z-index: 1000;
-		text-align: center;
-		overflow: scroll;
-		-webkit-transition: none 0.3s linear;
-		transition: none 0.3s linear;
-		-moz-transition: none 0.3s linear;
-		-o-transition: none 0.3s linear;
-	}
-
-	.bp-toleft {
-		left: -200px;
-		overflow: hidden;
-	}
 
 	.push-menu-open {
-		right: 0px;
+		top: 6px;
+	}
+
+	svg {
+		display: block;
+		width: 40px;
+		height: 40px;
+		margin: 0 auto;
 	}
 }
 
