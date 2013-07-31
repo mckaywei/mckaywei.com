@@ -375,11 +375,9 @@ table {
 }
 
 hr {
-	margin: 2em 0;
-	color: #ddd;
-	background-color: #ddd;
-	height: 0.2em;
-	border: 0;
+	margin: 2em auto;
+	border: 1px solid #dededc;
+	width: 20%;
 }
 
 article li {
