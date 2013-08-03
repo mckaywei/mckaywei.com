@@ -196,7 +196,7 @@ button, a, button:hover, a:hover, pre, pre:hover, h1, ul.tags li a {
 article {
 	width: 90%;
 	margin: 1em auto;
-	line-height: 1.8em;
+	line-height: 1.8;
 	max-width: 28em;
 }
 
@@ -228,7 +228,7 @@ blockquote {
 	padding: 0.0001em 1.5em;
 	color: #999;
 	font-size: 0.8em;
-	line-height: 1.8em;
+	line-height: 1.8;
 }
 
 .huge {
@@ -402,7 +402,7 @@ article li {
 pre {
 	margin-bottom: 1em;
 	padding: 0.35em;
-	line-height: 1.5em;
+	line-height: 1.5;
 	background-color: #eee;
 	border: 1px solid #eee;
 	overflow-x: auto;
@@ -633,10 +633,6 @@ time {
 		margin: 1em auto;
 	}
 
-	article {
-		line-height: 1.8em;
-	}
-
 	h1 {
 		font-size: 1.5em;
 	}
@@ -696,7 +692,7 @@ time {
 	}
 
 	.nav-toggle {
-		position: absolute;
+		position: fixed;
 		right: 5%;
 		top: 1em;
 		z-index: 2;
@@ -718,7 +714,7 @@ time {
 
 	.push-menu {
 		background-color: #fafafa;
-		position: absolute;
+		position: fixed;
 		width: 100%;
 		height: 200px;
 		left: 0;
@@ -813,24 +809,25 @@ time {
 }
 
 @media only screen and (min-width: 20.01em) and (max-width: 48.99em) {
-	.push-menu a {
-
-	}
 
 	.push-menu-open {
 		top: 6px;
 	}
+
 }
 
 @media only screen and (max-width: 20em) {
-	.push-menu a {
-		display: block;
-		color: #fff;
-
-	}
 
 	.push-menu-open {
 		top: 6px;
+	}
+
+	.push-menu {
+		position: absolute;
+	}
+
+	.nav-toggle {
+		position: absolute;
 	}
 
 	.notes {
