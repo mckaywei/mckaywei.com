@@ -620,7 +620,7 @@ time {
 	max-width: 28em;
 }
 
-@media only screen and (max-width: 48.99em) {
+@media only screen and (max-width: 48em) {
 	body {
 		width: 100%;
 		margin: 0 auto;
@@ -871,7 +871,7 @@ time {
 
 }
 
-@media only screen and (min-width: 20.01em) and (max-width: 48.99em) {
+@media only screen and (min-width: 20.01em) and (max-width: 48em) {
 
 	.push-menu-open {
 		top: 6px;
