@@ -724,14 +724,45 @@ time {
 		text-align: center;
 		opacity: 0.95;
 		box-shadow: 0px 1px 4px rgba(0,0,0,.2);
-		-webkit-transition: none 0.3s linear;
-		transition: none 0.3s linear;
-		-moz-transition: none 0.3s linear;
-		-o-transition: none 0.3s linear;
 	}
+
+	@-webkit-keyframes vertical-pop{
+		from{-webkit-transform:scaleY(0.1);
+			opacity:0}85%{-webkit-transform:scaleY(1.05);
+				opacity:1}to{-webkit-transform:scaleY(1)}
+			}
+
+	@keyframes vertical-pop{
+		from{transform:scaleY(0.1);
+			opacity:0}85%{transform:scaleY(1.05);
+				opacity:1}to{transform:scaleY(1)}
+			}
 
 	.push-menu-open {
 		top: 6px;
+		display: block;
+		vertical-align: baseline;
+		-webkit-transform-origin: 0 0;
+		-moz-transform-origin: 0 0;
+		-ms-transform-origin: 0 0;
+		-o-transform-origin: 0 0;
+		transform-origin: 0 0;
+		-webkit-animation-name: vertical-pop;
+		-moz-animation-name: vertical-pop;
+		animation-name: vertical-pop;
+		-webkit-animation-duration: 0.15s;
+		-moz-animation-duration: 0.15s;
+		animation-duration: 0.15s;
+		-webkit-animation-timing-function: ease-in;
+		-moz-animation-timing-function: ease-in;
+		animation-timing-function: ease-in;
+		-webkit-animation-iteration-count: 1;
+		-moz-animation-iteration-count: 1;
+		animation-iteration-count: 1;
+	}
+
+	.nav-toggle:active .nav-bar {
+		background-color: silver;
 	}
 
 	.push-menu a:hover {
