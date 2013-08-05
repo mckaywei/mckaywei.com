@@ -14,8 +14,21 @@ body {
   	word-wrap: break-word;
 }
 
-article, aside, div, figure, figcaption, footer, header, nav, section, img, video, hr {
+article, aside, figure, figcaption, footer, header, nav, section {
 	display: block;
+}
+
+audio, canvas, video {
+	display: inline-block;
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+[hidden] {
+    display: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -30,14 +43,16 @@ strong {
 	font-family: 'Proxima Nova Regular', 'Helvetica Neue', "Hiragino Sans GB", Helvetica, Arial, sans-serif;
   	text-rendering: optimizelegibility;
   	-webkit-font-smoothing: antialiased;
+  	font-weight: bold;
 }
 
 h1 {
-	font-size: 2.2em;
+	font-size: 2em;
+    margin: 0.67em 0;
 }
 
 h2 {
-	font-size: 2em;
+	font-size: 1.8em;
 }
 
 h3 {
@@ -62,6 +77,15 @@ h5 {
 a {
 	text-decoration: none;
 	color: #4271B0;
+}
+
+a:focus {
+    outline: thin dotted;
+}
+
+a:active,
+a:hover {
+    outline: 0;
 }
 
 .content {
@@ -378,6 +402,9 @@ hr {
 	margin: 2em auto;
 	border: 1px solid #dededc;
 	width: 20%;
+	-moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
 }
 
 article li {
@@ -424,7 +451,7 @@ pre::-webkit-scrollbar-thumb:horizontal {
 }
 
 code, pre {
-	font-family: Consolas,"Andale Mono",Monaco,Courier,"Courier New",Verdana,sans-serif;
+	font-family: Consolas,"Andale Mono",Monaco,Courier,"Courier New",monospace, serif;
 	-webkit-font-smoothing: subpixel-antialiased;
 }
 
@@ -787,6 +814,10 @@ time {
 		width: 50px;
 		height: 50px;
 		margin: 0 auto;
+	}
+
+	svg:not(:root) {
+    overflow: hidden;
 	}
 
 	.video {
