@@ -170,9 +170,10 @@ button, a, button:hover, a:hover, pre, pre:hover, h1, ul.tags li a {
 }
 
 .twitter-bird {
-	background-image: url(http://cdn.mckaywei.com/img/twitter-sprite.png);
+	background-image: url(http://cdn.mckaywei.com/img/twitter-bird.png);
+	background-size: 140px 35px;
 	cursor: pointer;
-	display: inline-block;
+	display: block;
 	height: 35px;
 	width: 35px;
 	position: fixed;
@@ -620,7 +621,7 @@ time {
 	max-width: 28em;
 }
 
-@media only screen and (max-width: 48em) {
+@media only screen and (max-width: 768px) {
 	body {
 		width: 100%;
 		margin: 0 auto;
@@ -866,12 +867,9 @@ time {
 		margin: 0 auto;
 		float: none;
 	}
-
-
-
 }
 
-@media only screen and (min-width: 20.01em) and (max-width: 48em) {
+@media only screen and (min-width: 321px) and (max-width: 48em) {
 
 	.push-menu-open {
 		top: 6px;
@@ -879,7 +877,7 @@ time {
 
 }
 
-@media only screen and (max-width: 20em) {
+@media only screen and (max-width: 320px) {
 
 	.push-menu-open {
 		top: 6px;
@@ -905,7 +903,7 @@ time {
 	}
 }
 
-@media only screen and (min-width: 49em) {
+@media only screen and (min-width: 769px) {
 
 	body {
 		width: 100%;
