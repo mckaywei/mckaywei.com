@@ -228,6 +228,7 @@ article {
 figure {
 	margin: 4em auto;
 	max-width: 1000px;
+	text-align: center;
 }
 
 .no-top {
@@ -236,9 +237,7 @@ figure {
 }
 
 img {
-	margin: 0 auto;
 	max-width: 100%;
-	width: auto;
 }
 
 figcaption {
@@ -621,7 +620,7 @@ time {
 	max-width: 28em;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 48.99em) {
 	body {
 		width: 100%;
 		margin: 0 auto;
@@ -633,73 +632,8 @@ time {
 	}
 
 	.logo {
-		font-size: 0.7em;
-		margin-top: 0.1em;
-	}
-
-	#m {
-		display: none;
-	}
-
-	#w {
-		display: none;
-	}
-
-	#m-abbr {
-		display: inline;
-	}
-
-	#w-abbr {
-		display: inline;
-	}
-
-	header {
-		height: 3em;
-	}
-
-	.entry-title {
-		margin: 1em auto;
-	}
-
-	h1 {
-		font-size: 1.5em;
-	}
-
-	h3 {
-		font-size: 1.2em;
-	}
-
-	figure {
-		margin: 0 auto;
-	}
-
-	blockquote {
-		font-size: 90%;
-		padding-left: 1em;
-	}
-
-	.huge {
-		width: 90%;
-		color: #678;
-		font-size: 1.2em;
-		margin: 1.2em 0 1.2em;
-		-webkit-hyphens:auto;
-		hyphens: auto;
-		-moz-hyphens: auto;
-		text-align: left;
-		margin: 0.5em auto;
-	}
-
-	.center {
-		width: 90%;
-		color: #678;
-		font-size: 1.2em;
-		margin: 1.2em 0 1.2em;
-		-webkit-hyphens:auto;
-		hyphens: auto;
-		-moz-hyphens: auto;
-		text-align: center;
-		margin: 0.5em auto;
+		font-size: 0.5em;
+		margin-top: 0.3em;
 	}
 
 	h5 {
@@ -709,7 +643,7 @@ time {
 	color: #678;
 	margin: 0.3em auto 0.3em 1em;
 	line-height: 1.4;
-}
+	}
 
 	.main-nav {
 		display: none;
@@ -838,6 +772,98 @@ time {
 	height: 100%;
 	}
 
+	.tool img {
+		max-width: 90%;
+		margin: 0 auto;
+		float: none;
+	}
+
+	.tool div {
+		max-width: 90%;
+		margin: 0 auto;
+		float: none;
+	}
+}
+
+@media only screen and (max-width: 38em) {
+
+	header {
+		height: 3em;
+	}
+
+	.logo {
+		font-size: 0.7em;
+		margin-top: 0.1em;
+	}
+
+	#m {
+		display: none;
+	}
+
+	#w {
+		display: none;
+	}
+
+	#m-abbr {
+		display: inline;
+	}
+
+	#w-abbr {
+		display: inline;
+	}
+
+	.entry-title {
+		margin: 1em auto;
+	}
+
+	svg {
+		display: block;
+		width: 45px;
+		height: 45px;
+		margin: 0 auto;
+	}
+
+	.huge {
+		width: 90%;
+		color: #678;
+		font-size: 1.2em;
+		margin: 1.2em 0 1.2em;
+		-webkit-hyphens:auto;
+		hyphens: auto;
+		-moz-hyphens: auto;
+		text-align: left;
+		margin: 0.5em auto;
+	}
+
+	.center {
+		width: 90%;
+		color: #678;
+		font-size: 1.2em;
+		margin: 1.2em 0 1.2em;
+		-webkit-hyphens:auto;
+		hyphens: auto;
+		-moz-hyphens: auto;
+		text-align: center;
+		margin: 0.5em auto;
+	}
+
+	h1 {
+		font-size: 1.5em;
+	}
+
+	h3 {
+		font-size: 1.2em;
+	}
+
+	figure {
+		margin: 0 auto;
+	}
+
+	blockquote {
+		font-size: 90%;
+		padding-left: 1em;
+	}
+
 	.right {
 	border: none;
 	padding: 0;
@@ -856,32 +882,22 @@ time {
 		margin-left: 0;
 	}
 
-	.tool img {
-		max-width: 90%;
-		margin: 0 auto;
-		float: none;
+	.loadDisqus {
+		font-size: 1.4em;
+		font-weight: bold;
+		color: #678;
+		margin: -1em auto;
+		border: solid;
+		width: 200px;
 	}
 
-	.tool div {
-		max-width: 90%;
-		margin: 0 auto;
-		float: none;
-	}
-}
-
-@media only screen and (min-width: 321px) and (max-width: 48em) {
-
-	.push-menu-open {
-		top: 6px;
+	.loadDisqus:hover {
+		color: #444;
 	}
 
 }
 
-@media only screen and (max-width: 320px) {
-
-	.push-menu-open {
-		top: 6px;
-	}
+@media only screen and (max-width: 20em) {
 
 	.push-menu {
 		position: absolute;
@@ -901,9 +917,13 @@ time {
 		height: 40px;
 		margin: 0 auto;
 	}
+
+	footer {
+		margin: 1em auto;
+	}
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 49em) {
 
 	body {
 		width: 100%;
@@ -935,4 +955,10 @@ time {
   		margin: 4em auto;
   		max-width: 977px;
   	}
+}
+
+@media only screen and (min-width: 38.01em) {
+	.loadDisqus {
+		display: none;
+	}
 }
