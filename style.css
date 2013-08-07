@@ -31,7 +31,7 @@ audio:not([controls]) {
     display: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4 {
 	font-family: 'Proxima Nova Regular', 'Helvetica Neue', "Hiragino Sans GB", Helvetica, Arial, sans-serif;
 	text-rendering: optimizelegibility;
   	-webkit-font-smoothing: antialiased;
@@ -63,15 +63,6 @@ h3 {
 h4 {
 	font-size: 1.2em;
 	margin: 1.5em 0 0.5em;
-}
-
-h5 {
-	font-size: 1.1em;
-	float: right;
-	width: 40%;
-	color: #678;
-	margin: 0.5em -20% 0.5em 1.5em;
-	line-height: 1.5;
 }
 
 a {
@@ -286,6 +277,17 @@ blockquote {
 	border: none;
 	padding: 0;
 	text-align: center;
+}
+
+.push-right {
+	font-size: 1.1em;
+	float: right;
+	width: 40%;
+	color: #678;
+	margin: 0.5em -20% 0.5em 1.5em;
+	line-height: 1.5;
+	border: none;
+	padding: 0;
 }
 
 footer {
@@ -620,7 +622,7 @@ time {
 	max-width: 28em;
 }
 
-@media only screen and (max-width: 48.99em) {
+@media only screen and (max-width: 54.99em) {
 	body {
 		width: 100%;
 		margin: 0 auto;
@@ -636,7 +638,7 @@ time {
 		margin-top: 0.3em;
 	}
 
-	h5 {
+	.push-right {
 	font-size: 1em;
 	float: right;
 	width: 30%;
@@ -923,7 +925,7 @@ time {
 	}
 }
 
-@media only screen and (min-width: 49em) {
+@media only screen and (min-width: 55em) {
 
 	body {
 		width: 100%;
