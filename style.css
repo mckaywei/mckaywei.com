@@ -663,10 +663,10 @@ time {
 	}
 
 	.nav-bar {
-		width: 20px;
-		height: 4px;
+		width: 1em;
+		height: 0.2em;
 		background-color: silver;
-		margin-bottom: 4px;
+		margin-bottom: 0.2em;
 		-webkit-transition:all 025s ease;
 		transition: all 0.25s ease;
 		-moz-transition: all 0.25s ease;
@@ -886,15 +886,18 @@ time {
 
 	.loadDisqus {
 		font-size: 1.4em;
-		font-weight: bold;
-		color: #678;
+		background-color: #678;
 		margin: -1em auto;
-		border: solid;
 		width: 200px;
+		padding: 0.5em;
+		-webkit-border-radius: 0.2em;
+		-moz-border-radius: 0.2em;
+		border-radius: 0.2em;
+		color: #fff;
 	}
 
 	.loadDisqus:hover {
-		color: #444;
+		background-color: #444;
 	}
 
 }
