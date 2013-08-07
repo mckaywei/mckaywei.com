@@ -525,6 +525,10 @@ code {
 	color: #cacaca;
 }
 
+.archive {
+	margin-bottom: 1em;
+}
+
 .archive a:hover {
 	border-bottom: solid 0.15em #4271B0;
 	color: #333332;
@@ -587,14 +591,14 @@ time {
 
 #stuff {
 	max-width: 960px;
-	margin: 4em auto;
+	margin: 4em auto -6em;
 	list-style: none;
 	padding: 0 0 52px;
 	width: 90%;
 }
 
 .tool {
-	margin-bottom: 78px;
+	margin-bottom: 3em;
 }
 
 .tool:after {
@@ -781,9 +785,10 @@ time {
 	}
 
 	.tool div {
-		max-width: 90%;
+		max-width: 28em;
 		margin: 0 auto;
 		float: none;
+		width: 90%;
 	}
 }
 
@@ -879,9 +884,37 @@ time {
 	left: auto;
 	}
 
+	.notes {
+		margin-top: 1em;
+	}
+
+	.notes a:hover {
+		border: none;
+	}
+
+	.note-list li {
+		margin-bottom: 0.5em;
+	}
+
 	.year {
 		border: none;
 		margin-left: 0;
+		margin: 1em auto 1em 0;
+	}
+
+	.right {
+		padding: 5px;
+		border: 1px solid #eee;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		-ms-border-radius: 3px;
+		-o-border-radius: 3px;
+		border-radius: 3px;
+		width: 40%;
+	}
+
+	.archive a:hover {
+		border: none;
 	}
 
 	.loadDisqus {
@@ -961,6 +994,14 @@ time {
 		opacity: 100;
 	}
 
+	#stuff {
+		margin: 2em auto -6em;
+	}
+
+	.tool div {
+		width: 100%;
+	}
+
 }
 
 @media only screen and (max-width: 20em) {
@@ -971,37 +1012,6 @@ time {
 
 	.nav-toggle {
 		position: absolute;
-	}
-
-	.notes {
-		margin-top: 1em;
-	}
-
-	.notes a:hover {
-		border: none;
-	}
-
-	.note-list li {
-		margin-bottom: 0.5em;
-	}
-
-	.year {
-		margin: 1em auto 1em 0;
-	}
-
-	.right {
-		padding: 5px;
-		border: 1px solid #eee;
-		-webkit-border-radius: 3px;
-		-moz-border-radius: 3px;
-		-ms-border-radius: 3px;
-		-o-border-radius: 3px;
-		border-radius: 3px;
-		width: 40%;
-	}
-
-	.archive a:hover {
-		border: none;
 	}
 
 	svg {
