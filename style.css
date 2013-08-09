@@ -674,6 +674,9 @@ time {
 		-webkit-transition:all 025s ease;
 		transition: all 0.25s ease;
 		-moz-transition: all 0.25s ease;
+		-webkit-border-radius: 1px;
+		-moz-border-radius: 1px;
+		border-radius: 1px;
 	}
 
 	.nav-toggle:hover .nav-bar {
