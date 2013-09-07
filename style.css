@@ -1,17 +1,20 @@
 html {
 	-webkit-text-size-adjust: 100%;
   	-ms-text-size-adjust: 100%;
+  	-moz-text-size-adjust: 100%;
+  	-webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 body {
-	font-family: 'Proxima Nova Regular', 'Helvetica Neue', "Hiragino Sans GB", Helvetica, Arial, sans-serif;
+	font-family: "adelle-sans", "Lucida Grande", "Lucida Sans", Arial, "Hiragino Sans GB", "STHeiti", "WenQuanYi Micro Hei", sans-serif;
 	margin: 0;
 	width: 100%;
-	font-size: 1.4em;
-	color: #333332;
+	font-size: 1.2em;
+	color: #444;
 	text-rendering: optimizelegibility;
   	-webkit-font-smoothing: antialiased;
   	word-wrap: break-word;
+  	font-weight: 400;
 }
 
 article, aside, figure, figcaption, footer, header, nav, section {
@@ -32,18 +35,18 @@ audio:not([controls]) {
 }
 
 h1, h2, h3, h4 {
-	font-family: 'Proxima Nova Regular', 'Helvetica Neue', "Hiragino Sans GB", Helvetica, Arial, sans-serif;
+	font-family: "adelle-sans", "Lucida Grande", "Lucida Sans", Arial, "Hiragino Sans GB", "STHeiti", "WenQuanYi Micro Hei", sans-serif;
 	text-rendering: optimizelegibility;
   	-webkit-font-smoothing: antialiased;
   	color: #2c251d;
-  	font-weight: normal;
+  	font-weight: 400;
 }
 
 strong {
-	font-family: 'Proxima Nova Regular', 'Helvetica Neue', "Hiragino Sans GB", Helvetica, Arial, sans-serif;
+	font-family: "adelle-sans", "Lucida Grande", "Lucida Sans", Arial, "Hiragino Sans GB", "STHeiti", "WenQuanYi Micro Hei", sans-serif;
   	text-rendering: optimizelegibility;
   	-webkit-font-smoothing: antialiased;
-  	font-weight: bold;
+  	font-weight: 700;
 }
 
 h1 {
@@ -56,12 +59,12 @@ h2 {
 }
 
 h3 {
-	font-size: 1.7em;
+	font-size: 1.5em;
 	margin: 1.5em 0 0.5em;
 }
 
 h4 {
-	font-size: 1.2em;
+	font-size: 1.3em;
 	margin: 1.5em 0 0.5em;
 }
 
@@ -99,12 +102,12 @@ header {
 	width: 90%;
 	margin: 0 auto;
 	height: 4em;
-	max-width: 28em;
+	max-width: 33em;
 }
 
 .logo {
 	text-align: left;
-	font-size: 45%;
+	font-size: 52%;
 	float: left;
 	margin-top: -1em;
 	z-index: 4;
@@ -116,7 +119,7 @@ header {
 }
 
 .w {
-	margin-left: -5px;
+	margin-left: -4px;
 }
 
 #m-abbr {
@@ -129,7 +132,7 @@ header {
 
 nav {
 	text-align: right;
-	font-size: 0.65em;
+	font-size: 75%;
 	float: right;
 	margin-top: -0.4em;
 }
@@ -161,7 +164,7 @@ button, a, button:hover, a:hover, pre, pre:hover, h1, ul.tags li a {
 }
 
 .twitter-bird {
-	background-image: url(http://cdn.mckaywei.com/img/twitter-bird.png);
+	background-image: url(https://s3-ap-southeast-2.amazonaws.com/mckay.cdn/assests/twitter-bird.png);
 	background-size: 140px 35px;
 	cursor: pointer;
 	display: block;
@@ -198,7 +201,7 @@ button, a, button:hover, a:hover, pre, pre:hover, h1, ul.tags li a {
 .entry-title {
 	width: 90%;
 	margin: 2em auto;
-	max-width:28em; 
+	max-width:33em; 
 }
 
 .entry-title h1 a {
@@ -213,7 +216,7 @@ article {
 	width: 90%;
 	margin: 1em auto;
 	line-height: 1.8;
-	max-width: 28em;
+	max-width: 33em;
 }
 
 figure {
@@ -238,17 +241,18 @@ figcaption {
 }
 
 blockquote {
-	font-family: 'Proxima Nova Regular Italic', serif;
+	font-family: "adelle-sans", "Lucida Grande", "Lucida Sans", Arial, "Hiragino Sans GB", "STHeiti", "WenQuanYi Micro Hei", sans-serif;
 	border-left: 0.3em solid #4271B0;
 	margin: 1.5em 0;
 	padding: 0.0001em 1.5em;
 	color: #323232;
 	font-size: 0.8em;
 	line-height: 1.8;
+	font-style: italic;
 }
 
 .huge {
-	font-family: 'Proxima Nova Regular', 'Helvetica Neue', "Hiragino Sans GB", Helvetica, Arial, sans-serif;
+	font-family: "adelle-sans", "Lucida Grande", "Lucida Sans", Arial, "Hiragino Sans GB", "STHeiti", "WenQuanYi Micro Hei", sans-serif;
 	max-width: 800px;
 	color: #678;
 	font-size: 1.4em;
@@ -269,7 +273,7 @@ blockquote {
 }
 
 .center {
-	font-family: 'Proxima Nova Regular', 'Helvetica Neue', "Hiragino Sans GB", Helvetica, Arial, sans-serif;
+	font-family: "adelle-sans", "Lucida Grande", "Lucida Sans", Arial, "Hiragino Sans GB", "STHeiti", "WenQuanYi Micro Hei", sans-serif;
 	max-width: 800px;
 	color: #678;
 	font-size: 1.4em;
@@ -283,7 +287,7 @@ blockquote {
 }
 
 .push-right {
-	font-family: 'Proxima Nova Regular', 'Helvetica Neue', "Hiragino Sans GB", Helvetica, Arial, sans-serif;
+	font-family: "adelle-sans", "Lucida Grande", "Lucida Sans", Arial, "Hiragino Sans GB", "STHeiti", "WenQuanYi Micro Hei", sans-serif;
 	font-size: 1.1em;
 	float: right;
 	width: 40%;
@@ -301,7 +305,7 @@ footer {
 
 .main-footer {
 	color: #999;
-	font-size: 0.7em;
+	font-size: 0.8em;
 	margin: 3em auto 2em;
 }
 
@@ -316,82 +320,19 @@ footer {
 
 .more {
 	text-align: left;
-	max-width: 32em;
+	max-width: 33em;
 	margin: 0 auto 4em;
 }
 
-.btn {
-	border: none;
-	font-family: inherit;
-	font-size: inherit;
-	color: inherit;
-	background: #fff;
-	cursor: pointer;
-	padding: 0 2em;
-	display: inline-block;
-	letter-spacing: 1px;
-	outline: none;
-	position: relative;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	transition: all 0.3s;
+.more-posts {
+	color: #555;
+	opacity: 0.3;
+	font-weight: 700;
+	-webkit-transition: all .3s ease;
 }
 
-.btn:before {
-	font-family: 'icomoon';
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-	position: relative;
-	-webkit-font-smoothing: antialiased;
-}
-
-.icon-arrow-right:before {
-	content: "\e00d";
-}
-
-.btn-4 {
-	color: #ddd;
-	overflow: hidden;
-}
-
-.btn-4:active {
-	border-color: #fff;
-	color: #4271B0;
-}
-
-.btn-4:hover {
-	background: #fff;
-	color: #999;
-}
-
-.btn-4:before {
-	position: absolute;
-	height: 100%;
-	font-size: 100%;
-	line-height: 1.2;
-	color: #999;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	transition: all 0.3s;
-}
-
-.btn-4:active:before {
-	color: #4271B0;
-}
-
-.btn-4c:before {
-	left: 78%;
-	opacity: 0;
-	top: 0;
-}
-
-.btn-4c:hover:before {
-	left: 85%;
-	opacity: 1;
+.more-posts:hover {
+	opacity: 100;
 }
 
 table {
@@ -485,7 +426,7 @@ code {
 }
 
 .note-content {
-	max-width: 28em;
+	max-width: 33em;
 	width: 90%;
 	margin: 2em auto;
 }
@@ -501,7 +442,7 @@ code {
 .timeline {
 	margin: 0 auto 3em;
 	width: 90%;
-	max-width: 28em;
+	max-width: 33em;
 }
 
 .timeline li {
@@ -547,7 +488,6 @@ time {
 	font-size: 70%;
 	top: -1px;
 	color: #85878F;
-	font-weight: 400;
 	padding-left: 1px;
 }
 
@@ -557,7 +497,6 @@ time {
 	font-size: 70%;
 	top: -1px;
 	color: #85878F;
-	font-weight: 400;
 	padding-left: 1px;
 }
 
@@ -567,7 +506,6 @@ time {
 	font-size: 70%;
 	top: -1px;
 	color: #85878F;
-	font-weight: 400;
 	padding-left: 1px;
 }
 
@@ -577,7 +515,6 @@ time {
 	font-size: 70%;
 	top: -1px;
 	color: #85878F;
-	font-weight: 400;
 	padding-left: 1px;
 }
 
@@ -623,7 +560,7 @@ time {
 #disqus_thread {
 	margin: 3em auto;
 	width: 90%;
-	max-width: 28em;
+	max-width: 33em;
 }
 
 @media only screen and (max-width: 54.99em) {
@@ -667,8 +604,8 @@ time {
 	}
 
 	.nav-bar {
-		width: 1em;
-		height: 0.16em;
+		width: 22px;
+		height: 4px;
 		background-color: silver;
 		margin-bottom: 0.2em;
 		-webkit-transition:all 025s ease;
@@ -788,7 +725,7 @@ time {
 	}
 
 	.tool div {
-		max-width: 28em;
+		max-width: 33em;
 		margin: 0 auto;
 		float: none;
 		width: 90%;
