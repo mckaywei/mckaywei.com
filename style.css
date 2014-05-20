@@ -116,10 +116,7 @@ header {
 
 .m {
 	color: #333332;
-}
-
-.w {
-	margin-left: -4px;
+	float: left;
 }
 
 #m-abbr {
