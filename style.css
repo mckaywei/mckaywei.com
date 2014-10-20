@@ -65,7 +65,7 @@ h4 {
 
 a {
 	text-decoration: none;
-	color: #4271B0;
+	color: #03a9f4;
 }
 
 a:focus {
@@ -82,7 +82,7 @@ a:hover {
 }
 
 article a:hover {
-	border-bottom: solid 0.15em #4271B0;  
+	border-bottom: solid 0.15em #03a9f4;  
 }
 
 ul {
@@ -97,7 +97,7 @@ header {
 	width: 90%;
 	margin: 0 auto;
 	height: 4em;
-	max-width: 33em;
+	max-width: 600px;
 }
 
 .logo {
@@ -140,7 +140,7 @@ nav li a {
 }
 
 nav li a:hover {
-	border-top: solid 0.5em #4271B0;
+	border-top: solid 0.5em #03a9f4;
 }
 
 button, a, button:hover, a:hover, pre, pre:hover, h1, ul.tags li a {
@@ -151,8 +151,8 @@ button, a, button:hover, a:hover, pre, pre:hover, h1, ul.tags li a {
 }
 
 .selected {
-	color: #4271B0;
-	border-top: solid 0.5em #4271B0;
+	color: #03a9f4;
+	border-top: solid 0.5em #03a9f4;
 }
 
 .twitter-bird {
@@ -193,7 +193,7 @@ button, a, button:hover, a:hover, pre, pre:hover, h1, ul.tags li a {
 .entry-title {
 	width: 90%;
 	margin: 2em auto;
-	max-width:33em; 
+	max-width: 600px; 
 	text-align: center;
 }
 
@@ -202,14 +202,14 @@ button, a, button:hover, a:hover, pre, pre:hover, h1, ul.tags li a {
 }
 
 .entry-title h1 a:hover {
-	color: #4271B0;
+	color: #03a9f4;
 }
 
 article {
 	width: 90%;
 	margin: 1em auto;
 	line-height: 1.8;
-	max-width: 33em;
+	max-width: 600px;
 }
 
 figure {
@@ -235,7 +235,7 @@ figcaption {
 
 blockquote {
 	font-family: "adelle-sans", "Lucida Grande", "Lucida Sans", Arial, "Hiragino Sans GB", "STHeiti", "WenQuanYi Micro Hei", sans-serif;
-	border-left: 0.3em solid #4271B0;
+	border-left: 0.3em solid #03a9f4;
 	margin: 1.5em 0;
 	padding: 0.0001em 1.5em;
 	color: #323232;
@@ -303,7 +303,7 @@ footer {
 }
 
 .read-more:hover {
-	border-right: solid 0.3em #4271B0;
+	border-right: solid 0.3em #03a9f4;
 	border-bottom: none;
 }
 
@@ -313,7 +313,7 @@ footer {
 
 .more {
 	text-align: left;
-	max-width: 33em;
+	max-width: 600px;
 	margin: 0 auto 4em;
 }
 
@@ -339,7 +339,7 @@ table {
 }
 
 th {
-	background-color: #4271B0;
+	background-color: #03a9f4;
     font-weight: bold;
     color: #fff;
     white-space: nowrap;
@@ -355,7 +355,7 @@ td, th{
 
 }
 tbody th {
-	background-color: #2ea879;
+	background-color: #03a9f4;
 }
 tbody tr:nth-child(2n-1) {
     background-color: #f5f5f5;
@@ -420,14 +420,27 @@ hr {
 }
 
 article li {
-	list-style-type: disc;
-	margin-left: 1.5em;
 	margin-bottom: 0.8em;
 	font-size: 85%;
+	list-style: none;
+	position: relative;
+}
+
+article ul li:before {
+	content: "";
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	background: #c9ced1;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	left: -22px;
+	top: 9px;
 }
 
 .highlight {
 	position: relative;
+	width:auto;
 }
 
 .clear {
@@ -439,16 +452,21 @@ article li {
 }
 
 pre {
-	margin-bottom: 1em;
-	padding: 0.35em;
-	line-height: 1.5;
-	background-color: #eee;
-	border: 1px solid #eee;
+	margin-left: -84px;
+	margin-right: -84px;
+	padding-left: 84px;
+	padding-right: 84px;
+	line-height: 1.6;
+	background: #fafafb;
+	border-top: 1px solid #f0f2f3;
+	border-bottom: 1px solid #f0f2f3;
 	overflow-x: auto;
-	font-size: 65%;
-	color: #333;
+	font-size: 0.8em;
+	color: #292e31;
 	-webkit-font-smoothing: subpixel-antialiased;
 	white-space:nowrap;
+	margin: 35px -150px;
+	padding: 25px 150px;
 }
 
 pre::-webkit-scrollbar {
@@ -467,8 +485,12 @@ code, pre {
 	-webkit-font-smoothing: subpixel-antialiased;
 }
 
+pre .meta {
+	color: #939da3;
+}
+
 code {
-	color: #d14;
+	color: #ff5252;
 }
 
 .c {
@@ -486,12 +508,12 @@ code {
 }
 
 .notes a:hover {
-	border-bottom: solid 0.15em #4271B0;
+	border-bottom: solid 0.15em #03a9f4;
 	color: #333332;
 }
 
 .note-content {
-	max-width: 33em;
+	max-width: 600px;
 	width: 90%;
 	margin: 2em auto;
 }
@@ -507,7 +529,7 @@ code {
 .timeline {
 	margin: 0 auto 3em;
 	width: 90%;
-	max-width: 33em;
+	max-width: 600px;
 }
 
 .timeline li {
@@ -536,7 +558,7 @@ code {
 }
 
 .archive a:hover {
-	border-bottom: solid 0.15em #4271B0;
+	border-bottom: solid 0.15em #03a9f4;
 	color: #333332;
 }
 
@@ -625,7 +647,7 @@ time {
 #disqus_thread {
 	margin: 3em auto;
 	width: 90%;
-	max-width: 33em;
+	max-width: 600px;
 }
 
 @media only screen and (max-width: 54.99em) {
@@ -682,7 +704,7 @@ time {
 	}
 
 	.nav-toggle:hover .nav-bar {
-		background-color: #4271B0;
+		background-color: #03a9f4;
 	}
 
 	.push-menu {
@@ -790,7 +812,7 @@ time {
 	}
 
 	.tool div {
-		max-width: 33em;
+		max-width: 600px;
 		margin: 0 auto;
 		float: none;
 		width: 90%;
@@ -818,6 +840,10 @@ time {
 
 	.more {
 		display: none;
+	}
+
+	article ul {
+	margin: 22px;
 	}
 
 	.footer-list {
@@ -1041,6 +1067,14 @@ time {
 
 }
 
+@media only screen and (max-width: 58em) {
+
+	pre {
+	margin: auto;
+	padding: 25px;
+	}
+}
+
 @media only screen and (min-width: 55em) {
 
 	body {
@@ -1054,8 +1088,8 @@ time {
   		font-size: 80%;
   		font-weight: normal;
   		color: #d1d8e3;
-  		left: -2.3em;
-  		top: 8px;
+  		left: -174px;
+  		top: 10px;
   		-webkit-transform: rotate(-90deg);
   		-moz-transform: rotate(-90deg);
   		transform: rotate(-90deg);
