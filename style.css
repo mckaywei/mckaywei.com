@@ -310,7 +310,8 @@ blockquote {
 
 .push-right {
 	font-family: "adelle-sans", "Lucida Grande", "Lucida Sans", Arial, "Hiragino Sans GB", "STHeiti", "WenQuanYi Micro Hei", sans-serif;
-	font-size: 1.1em;
+	font-size: 22px;
+    font-style: normal;
 	float: right;
 	width: 40%;
 	color: #678;
