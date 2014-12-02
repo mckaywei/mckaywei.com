@@ -50,8 +50,7 @@ h1.title {
 }
 
 h2 {
-	font-size: 1.7em;
-    color: #727272;
+	font-size: 1.8em;
 }
 
 h3 {
@@ -239,7 +238,6 @@ article {
 	width: 90%;
 	margin: 1em auto;
 	line-height: 1.8;
-    letter-spacing: 0.5px;
 	max-width: 600px;
 }
 
@@ -259,12 +257,9 @@ img {
 }
 
 figcaption {
-	font-size: 0.9rem;
+	font-size: 0.75em;
 	text-align: center;
-	margin-top: 6px;
-    color: #989898;
-    line-height: 12px;
-    letter-spacing: 0.5px;
+	margin-top: 0.5em;
 }
 
 blockquote {
@@ -1212,7 +1207,4 @@ time {
 	.footer-list {
 		display: none;
 	}
-}
-.icon {
-    font-size: 3rem;
 }
