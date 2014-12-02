@@ -50,7 +50,8 @@ h1.title {
 }
 
 h2 {
-	font-size: 1.8em;
+	font-size: 1.7em;
+    color: #727272;
 }
 
 h3 {
@@ -236,13 +237,14 @@ button, a, button:hover, a:hover, pre, pre:hover, h1, ul.tags li a {
 
 article {
 	width: 90%;
-	margin: 1em auto;
+	margin: auto;
 	line-height: 1.8;
+    letter-spacing: 0.5px;
 	max-width: 600px;
 }
 
 figure {
-	margin: 4em auto;
+	margin: 70px auto;
 	max-width: 1200px;
 	text-align: center;
 }
@@ -257,9 +259,19 @@ img {
 }
 
 figcaption {
-	font-size: 0.75em;
-	text-align: center;
-	margin-top: 0.5em;
+	font-size: 0.75rem;
+	text-align: left;
+    padding: 20px;
+    color: #989898;
+    line-height: 12px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+figcaption.caption {
+    text-align: center;
+    color: #666;
+    text-transform: none;
 }
 
 blockquote {
@@ -271,10 +283,10 @@ blockquote {
 	font-size: 0.8em;
 	line-height: 1.8;
 	font-style: italic;
+    letter-spacing: 0.5px;
 }
 
 .huge {
-	font-family: "adelle-sans", "Lucida Grande", "Lucida Sans", Arial, "Hiragino Sans GB", "STHeiti", "WenQuanYi Micro Hei", sans-serif;
 	max-width: 80%;
 	color: #678;
 	font-size: 1.4em;
@@ -295,7 +307,6 @@ blockquote {
 }
 
 .center {
-	font-family: "adelle-sans", "Lucida Grande", "Lucida Sans", Arial, "Hiragino Sans GB", "STHeiti", "WenQuanYi Micro Hei", sans-serif;
 	max-width: 800px;
 	color: #678;
 	font-size: 1.4em;
@@ -309,7 +320,6 @@ blockquote {
 }
 
 .push-right {
-	font-family: "adelle-sans", "Lucida Grande", "Lucida Sans", Arial, "Hiragino Sans GB", "STHeiti", "WenQuanYi Micro Hei", sans-serif;
 	font-size: 22px;
     font-style: normal;
 	float: right;
@@ -603,9 +613,9 @@ time {
 	content: "th";
 	position: absolute;
 	font-size: 75%;
-	font-weight: 700;
+	font-weight: 400;
 	top: -1px;
-	color: #85878F;
+	color: #747780;
 	padding-left: 1px;
 }
 
@@ -613,9 +623,9 @@ time {
 	content: "st";
 	position: absolute;
 	font-size: 75%;
-	font-weight: 700;
+	font-weight: 400;
 	top: -1px;
-	color: #85878F;
+	color: #747780;
 	padding-left: 1px;
 }
 
@@ -623,9 +633,9 @@ time {
 	content: "rd";
 	position: absolute;
 	font-size: 75%;
-	font-weight: 700;
+	font-weight: 400;
 	top: -1px;
-	color: #85878F;
+	color: #747780;
 	padding-left: 1px;
 }
 
@@ -633,9 +643,9 @@ time {
 	content: "nd";
 	position: absolute;
 	font-size: 75%;
-	font-weight: 700;
+	font-weight: 400;
 	top: -1px;
-	color: #85878F;
+	color: #747780;
 	padding-left: 1px;
 }
 
